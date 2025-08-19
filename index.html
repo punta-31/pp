@@ -1,0 +1,61 @@
+import React from "react";
+import image2 from "./image-2.png";
+import image8 from "./image-8.png";
+import image9 from "./image-9.png";
+import image from "./image.png";
+
+export const Desktop = (): JSX.Element => {
+  return (
+    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <div className="bg-white overflow-hidden w-[700px] h-[1080px] relative">
+        <header className="absolute w-[700px] h-[77px] top-0 left-0 bg-[#ffd3f5]">
+          <img
+            className="w-[49px] h-[49px] top-3.5 left-[622px] aspect-[1] absolute object-cover"
+            alt="Home icon"
+            src={image2}
+          />
+
+          <img
+            className="absolute w-[50px] h-[50px] top-[13px] left-[25px] aspect-[1] object-cover"
+            alt="Menu icon"
+            src={image}
+          />
+        </header>
+
+        <footer className="absolute w-[700px] h-[82px] top-[1005px] left-0 overflow-hidden">
+          <div className="relative w-[1440px] h-[77px] top-1 bg-[#ffd3f5]" />
+        </footer>
+
+        <main className="relative">
+          <h1 className="w-[110px] top-[84px] left-[295px] absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]">
+            ผลงาน
+          </h1>
+
+          <img
+            className="w-[383px] h-[347px] top-40 left-[149px] aspect-[1.1] absolute object-cover"
+            alt="Group photo of students in school uniforms standing together outdoors"
+            src={image8}
+          />
+
+          <img
+            className="w-[373px] h-[263px] top-[611px] left-[156px] aspect-[1.42] absolute object-cover"
+            alt="Students performing cheerleading routine on school field"
+            src={image9}
+          />
+
+          <p className="top-[883px] left-[136px] absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]">
+            <span className="[font-family:'Itim-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0]">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+            </span>
+
+            <span className="text-2xl">
+              กจกรรมการเปน
+              <br />
+              ผนเชยรโรงเรยนสวนกหลาบวทยาลย นนทบร
+            </span>
+          </p>
+        </main>
+      </div>
+    </div>
+  );
+};
