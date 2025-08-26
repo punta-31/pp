@@ -1,46 +1,35 @@
-import React from "react";
-import image2 from "./image-2.png";
-import image from "./image.png";
-
-export const Desktop = (): JSX.Element => {
-  return (
-    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
-      <div className="bg-white overflow-hidden w-[700px] h-[1080px] relative">
-        <header className="absolute w-[700px] h-[77px] top-0 left-0 bg-[#ffd3f5]">
-          <img
-            className="absolute w-[49px] h-[49px] top-3.5 left-[622px] aspect-[1] object-cover"
-            alt="Home icon"
-            src={image2}
-          />
-
-          <img
-            className="absolute w-[50px] h-[50px] top-[13px] left-[25px] aspect-[1] object-cover"
-            alt="Menu icon"
-            src={image}
-          />
-        </header>
-
-        <footer className="absolute w-[700px] h-[82px] top-[1005px] left-0 overflow-hidden">
-          <div className="relative w-[1440px] h-[77px] top-1 bg-[#ffd3f5]" />
-        </footer>
-
-        <main className="absolute inset-0 pt-[84px] pb-[82px]">
-          <h1 className="absolute w-[110px] top-[84px] left-[297px] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]">
-            ตดตอ
-          </h1>
-
-          <section className="absolute w-[822px] top-[244px] left-px rotate-[-0.43deg] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-[32px] tracking-[0] leading-[normal]">
-            <p>{"     "}แบบฟอรมตดตอ : puntaangsilp@gmail.com</p>
-            <br />
-            <br />
-            <br />
-            <p> ขอมลตดตอโดยตรง</p>
-            <br />
-            <br />
-            <p>IG : kkuichaiiq_</p>
-          </section>
-        </main>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap"><img class="image" src="img/image-2.png" /> <img class="img" src="img/image.png" /></div>
+        <div class="frame"><div class="rectangle"></div></div>
+        <div class="overlap-group">
+          <div class="text-wrapper">ติดต่อ</div>
+          <div class="rectangle-wrapper"><div class="rectangle-2"></div></div>
+        </div>
+        <div class="overlap-2">
+          <p class="puntaangsilp-gmail">
+                 แบบฟอร์มติดต่อ : puntaangsilp@gmail.com<br /><br /><br />     ข้อมูลติดต่อโดยตรง<br /><br />IG&nbsp;&nbsp;
+            : kkuichaiiq_<br />line : punta_6
+          </p>
+          <div class="overlap-3">
+            <p class="element">
+              <span class="span">:</span>
+              <span class="text-wrapper-2"> 189/231 ซ.6 ถ. 345 ตำบล บางคูวัด อำเภอเมืองปทุมธานี ปทุมธานี 12000</span>
+            </p>
+            <div class="text-wrapper-3">ที่อยู่</div>
+          </div>
+        </div>
+        <div class="div-wrapper"><div class="rectangle-2"></div></div>
       </div>
     </div>
-  );
-};
+  </body>
+</html>
