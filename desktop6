@@ -1,0 +1,82 @@
+import React from "react";
+import image1 from "./image-1.png";
+
+const navigationItems = [
+  { text: "หนาหลก", id: "home" },
+  { text: "ผลงาน", id: "portfolio" },
+  { text: "ประสบการณเเละทกษะ", id: "experience" },
+  { text: "ตดตอ", id: "contact" },
+  { text: "เกยรตประวต", id: "about" },
+];
+
+export const Desktop = (): JSX.Element => {
+  return (
+    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <div className="bg-white overflow-hidden w-[700px] h-[1080px] relative">
+        <header className="absolute w-[700px] h-[77px] top-0 left-0 bg-[#ffd3f5]">
+          <img
+            className="absolute w-[50px] h-[50px] top-3.5 left-[21px] aspect-[1] object-cover"
+            alt="Profile Image"
+            src={image1}
+          />
+        </header>
+
+        <footer className="absolute w-[700px] h-[82px] top-[1005px] left-0 overflow-hidden">
+          <div className="relative w-[1440px] h-[77px] top-1 bg-[#ffd3f5]" />
+        </footer>
+
+        <nav
+          className="absolute top-36 left-[46px]"
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <ul className="list-none p-0 m-0">
+            <li className="mb-0">
+              <a
+                href="#home"
+                className="w-[379px] whitespace-nowrap block [font-family:'Itim-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] no-underline hover:underline focus:underline focus:outline-2 focus:outline-blue-500"
+              >
+                หนาหลก
+              </a>
+            </li>
+
+            <li className="absolute w-[304px] h-[65px] top-[36px] left-0">
+              <a
+                href="#portfolio"
+                className="w-[304px] top-0 left-0 absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] no-underline hover:underline focus:underline focus:outline-2 focus:outline-blue-500"
+              >
+                ผลงาน
+              </a>
+
+              <a
+                href="#experience"
+                className="w-[223px] top-px left-0 absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] no-underline hover:underline focus:underline focus:outline-2 focus:outline-blue-500"
+              >
+                <br />
+                ประสบการณเเละทกษะ
+              </a>
+            </li>
+
+            <li className="absolute top-[101px] left-0">
+              <a
+                href="#contact"
+                className="w-[282px] whitespace-nowrap block [font-family:'Itim-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] no-underline hover:underline focus:underline focus:outline-2 focus:outline-blue-500"
+              >
+                ตดตอ
+              </a>
+            </li>
+
+            <li className="absolute top-[129px] left-[-4px]">
+              <a
+                href="#about"
+                className="w-[227px] block [font-family:'Itim-Regular',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] no-underline hover:underline focus:underline focus:outline-2 focus:outline-blue-500"
+              >
+                เกยรตประวต
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  );
+};
