@@ -1,0 +1,91 @@
+import React from "react";
+import image2 from "./image-2.png";
+import image6 from "./image-6.png";
+import image7 from "./image-7.png";
+import image from "./image.png";
+
+const Desktop = () => {
+  const achievements = [
+    {
+      id: 1,
+      image: image6,
+      title: "เขารวมกจกรรม คายจตอาสา รนเยาว โดย ONCEs Thailand",
+      subtitle: "พนทเรยนรสหรบเยาวชนไทย",
+      description:
+        "เขารวมกจกรรม คายจตอาสา รนเยาว โดย ONCEs Thailand\n                        พนทเรยนรสหรบเยาวชนไทย",
+    },
+    {
+      id: 2,
+      image: image7,
+      title: "เขารวมการประกวด SKN Cover Dance",
+      subtitle: "เปนหนงไมพงยาเสพตด",
+      description: "เขารวมการประกวด SKN Cover Dance เปนหนงไมพงยาเสพตด",
+    },
+  ];
+
+  return (
+    <main className="bg-white grid justify-items-center [align-items:start] w-screen">
+      <div className="bg-white overflow-hidden w-[700px] h-[1080px] relative">
+        {/* Top Header */}
+        <header className="absolute w-[700px] h-[77px] top-0 left-0 bg-[#ffd3f5]">
+          <img
+            className="w-[49px] h-[49px] top-3.5 left-[622px] aspect-[1] absolute object-cover"
+            alt="Profile"
+            src={image2}
+          />
+          <img
+            className="absolute w-[50px] h-[50px] top-[13px] left-[25px] aspect-[1] object-cover"
+            alt="Menu"
+            src={image}
+          />
+        </header>
+
+        {/* Bottom Footer */}
+        <footer className="w-[700px] h-[82px] top-[1005px] left-0 absolute overflow-hidden">
+          <div className="relative w-[1440px] h-[77px] top-1 bg-[#ffd3f5]" />
+        </footer>
+
+        {/* Main Title */}
+        <h1 className="absolute w-[232px] top-24 left-[213px] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-[40px] tracking-[0] leading-[normal]">
+          เกยรตประวต
+        </h1>
+
+        {/* First Achievement */}
+        <section className="absolute top-[175px] left-[132px]">
+          <img
+            className="w-[397px] h-[280px] aspect-[1.42] object-cover"
+            alt="ONCEs Thailand Certificate"
+            src={achievements[0].image}
+          />
+          <p className="absolute w-[817px] top-[302px] left-[-23px] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+            {achievements[0].description}
+          </p>
+        </section>
+
+        {/* Second Achievement */}
+        <section className="absolute top-[563px] left-[123px]">
+          <img
+            className="w-[416px] h-[287px] aspect-[1.45] object-cover"
+            alt="SKN Cover Dance Certificate"
+            src={achievements[1].image}
+          />
+          <p className="absolute w-[768px] top-[326px] left-[-20px] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-xl tracking-[0] leading-[normal]">
+            {achievements[1].description}
+          </p>
+        </section>
+
+        {/* Top Blue Stripe */}
+        <div className="w-[708px] h-[17px] top-[77px] -left-1 absolute overflow-hidden">
+          <div className="relative w-[1440px] h-[77px] top-1 bg-[#c6e7ff]" />
+        </div>
+
+        {/* Bottom Blue Stripe */}
+        <div className="w-[708px] h-[26px] top-[979px] left-0 absolute overflow-hidden">
+          <div className="relative w-[1440px] h-[77px] top-1 bg-[#c6e7ff]" />
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Desktop;
