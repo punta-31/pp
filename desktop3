@@ -1,91 +1,45 @@
-import React from "react";
-import image2 from "./image-2.png";
-import image3 from "./image-3.png";
-import image4 from "./image-4.png";
-import image from "./image.png";
-
-export const Desktop = (): JSX.Element => {
-  return (
-    <div className="bg-white grid justify-items-center [align-items:start] w-screen">
-      <div className="bg-white overflow-hidden w-[700px] h-[1080px] relative">
-        <div className="absolute w-[700px] h-[307px] top-0 left-0">
-          <div className="absolute w-[700px] top-0 left-0 h-[77px] bg-[#ffd3f5]" />
-
-          <div className="w-[376px] top-[76px] left-[179px] text-[40px] absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
-            ประสบการณและทกษะ
-          </div>
-
-          <img
-            className="w-[49px] h-[49px] top-3.5 left-[622px] aspect-[1] absolute object-cover"
-            alt="Image"
-            src={image2}
-          />
-
-          <img
-            className="absolute w-[50px] h-[50px] top-[13px] left-[25px] aspect-[1] object-cover"
-            alt="Image"
-            src={image}
-          />
-
-          <img
-            className="w-[167px] h-[157px] top-[150px] left-[47px] aspect-[1.06] absolute object-cover"
-            alt="Image"
-            src={image4}
-          />
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap-group">
+          <div class="rectangle"></div>
+          <div class="text-wrapper">ประสบการณ์และทักษะ</div>
+          <img class="image" src="img/image-2.png" />
+          <img class="img" src="img/image.png" />
+          <img class="image-2" src="img/image-4.png" />
         </div>
-
-        <div className="absolute w-[700px] h-[449px] top-[638px] left-0">
-          <div className="absolute w-[700px] h-[82px] top-[367px] left-0 overflow-hidden">
-            <div className="relative w-[1440px] top-1 h-[77px] bg-[#ffd3f5]" />
-          </div>
-
-          <div className="w-[335px] top-0 left-[311px] text-4xl absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
-            ทกษะ
-          </div>
-
-          <p className="absolute w-[539px] top-[52px] left-[136px] [font-family:'Itim-Regular',Helvetica] font-normal text-black text-base tracking-[0] leading-[normal]">
-            Hard Skills : การพดสนทรพจนภาษาองกฤษเเละภาษาจน
-            <br />
-            Soft Skills :&nbsp;&nbsp;ทกษะดานบคคล เชน ทกษะการเปนผน , ทกษะการวาดรป
+        <div class="overlap">
+          <div class="frame"><div class="rectangle-2"></div></div>
+          <div class="text-wrapper-2">ทักษะ</div>
+          <p class="hard-skills-soft">
+            Hard Skills : การพูดสุนทรพจน์ภาษาอังกฤษเเละภาษาจีน<br />Soft Skills :&nbsp;&nbsp;ทักษะด้านบุคคล เช่น
+            ทักษะการเป็นผู้นำ , ทักษะการวาดรูป
           </p>
-
-          <div className="w-[329px] top-[172px] left-[185px] text-4xl absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
-            ประสบการณการทงาน
-          </div>
-
-          <p className="w-[491px] top-[243px] left-[141px] text-base absolute [font-family:'Itim-Regular',Helvetica] font-normal text-black tracking-[0] leading-[normal]">
-            ประสบการณ ฝกงานทโรงพยาบาลธรรมศาสตร เฉลมพระเกยรต
-            <br />
-            ระยะเวลา 3 วน เเผนกอายรกรรม
+          <div class="text-wrapper-3">ประสบการณ์การทำงาน</div>
+          <p class="element">
+            ประสบการณ์ ฝึกงานที่โรงพยาบาลธรรมศาสตร์ เฉลิมพระเกียรติ<br />ระยะเวลา 3 วัน เเผนกอายุรกรรม
           </p>
         </div>
-
-        <img
-          className="w-[171px] h-[171px] top-[419px] left-[50px] aspect-[1] absolute object-cover"
-          alt="Image"
-          src={image3}
-        />
-
-        <div className="absolute w-[335px] h-[114px] top-[432px] left-[250px]">
-          <p className="absolute w-[335px] top-0 left-0 [font-family:'Itim-Regular',Helvetica] font-normal text-black text-base tracking-[0] leading-[normal]">
-            โรงเรยนสวนกหลาบวทยาลย นนทบร
-            <br />
-            แผนการเรยน STEM
-            <br />
-            วฒการศกษา มธยมศกษาปท 6<br />
-            ปทจบ 2569
+        <img class="image-3" src="img/image-3.png" />
+        <div class="overlap-2">
+          <p class="STEM">
+            โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี<br />แผนการเรียน STEM<br />วุฒิการศึกษา มัธยมศึกษาปีที่ 6<br />ปีที่จบ
+            2569
           </p>
-
-          <p className="absolute w-[335px] top-0 left-0 [font-family:'Itim-Regular',Helvetica] font-normal text-black text-base tracking-[0] leading-[normal]">
-            โรงเรยนสวนกหลาบวทยาลย นนทบร
-            <br />
-            แผนการเรยน STEM
-            <br />
-            วฒการศกษา มธยมศกษาปท 6<br />
-            ปทจบ 2569
+          <p class="STEM">
+            โรงเรียนสวนกุหลาบวิทยาลัย นนทบุรี<br />แผนการเรียน STEM<br />วุฒิการศึกษา มัธยมศึกษาปีที่ 6<br />ปีที่จบ
+            2569
           </p>
         </div>
       </div>
     </div>
-  );
-};
+  </body>
+</html>
